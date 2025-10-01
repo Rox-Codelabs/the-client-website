@@ -11,9 +11,9 @@
         <nav>
             <a href="index.html"><img src="./assets/logo.png" alt="logo"></a>
             <ul>
-                <a href=""><li>Home</li></a>
-                <a href=""><li>About</li></a>
-                <a href=""><li>contact</li></a>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/contact.html">contact</a></li>
             </ul>
         </nav>
     </header>
@@ -21,127 +21,161 @@
         <h1>Step into the world of image recognition</h1>
         <p>Explore ideas, experiments, and methods from Human Values for Smarter Cities, and see how designers keep human values at the heart of smart technology.</p>
     </section>
-    <aside class="filter">
-        <!--Utvoering-->
-        <h4>Uitvoering</h4>
-        <button class="">concept</button>
-        <button class="">experiment</button>
-        <button class="">methode</button>
-        <!--Participateiniveau-->
-        <h4>Participatieniveau</h4>
-        <button class="">transparency</button>
-        <button class="">actionable</button>
-        <button class="">legible</button>
-        <button class="">relatable</button>
-        <button class="">contestable</button>
-        <!--Processtap-->
-        <h4>Processtap</h4>
-        <button class="">evaluating</button>
-        <button class="">deployment</button>
-        <button class="">articulating</button>
-        <button class="">making</button>
-    </aside>
+    <form action="#">
+        <fieldset>
+            <legend>Execution</legend>
+
+            <input type="checkbox" id="concept" name="uitvoering" value="concept"/>
+            <label for="concept">💡Concept</label><br>
+
+            <input type="checkbox" id="experiment" name="uitvoering" value="experiment"/>
+            <label for="experiment">🧪 Experiment</label><br>
+
+            <input type="checkbox" id="methode" name="uitvoering" value="methode"/>
+            <label for="methode">📐 Methode</label><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Participation level</legend>
+
+            <input type="checkbox" id="transparency" name="participatieniveau" value="transparency"/>
+            <label for="transparency">👁️ Transparency</label><br>
+
+            <input type="checkbox" id="actionable" name="participatieniveau" value="actionable"/>
+            <label for="actionable">✋ Actionable</label><br>
+
+            <input type="checkbox" id="legible" name="participatieniveau" value="legible"/>
+            <label for="legible">📄 legible</label><br>
+
+            <input type="checkbox" id="relatable" name="participatieniveau" value="relatable"/>
+            <label for="relatable">❤️ Relatable</label><br>
+            
+            <input type="checkbox" id="contestable" name="participatieniveau" value="contestable"/>
+            <label for="contestable">⚖️ Contestable</label><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Process step</legend>
+
+            <input type="checkbox" id="evaluating" name="processtap" value="evaluating"/>
+            <label for="evaluating">🔍 Evaluating</label><br>
+
+            <input type="checkbox" id="deployment" name="processtap" value="deployment"/>
+            <label for="deployment">🚀 Deployment</label><br>
+
+            <input type="checkbox" id="articulating" name="processtap" value="articulating"/>
+            <label for="articulating">💬 Articulating</label><br>
+
+            <input type="checkbox" id="making" name="processtap" value="making"/>
+            <label for="making">🛠️ Making</label><br>
+
+        </fieldset>
+        <button type="reset">Clear all</button>
+    </form> 
     <main>
         <section class="concept-section">
             <!--Open statistieken delen-->
-            <figure>
+            <section>
+
                 <img src="./assets/placeholder-concept-1.jpg" alt="">
-                <figcaption>
-                    <h3>Open statistieken delen</h3>
-                    <p>Camera’s met beeldherkenning maken processen efficiënter, zoals bij een parkeerscanauto of scanfiets. Maar de data over die winst is niet publiek beschikbaar. Wat als radicale openheid juist nieuwe inzichten en debat zou stimuleren?</p>
-                    <a href="./pages/concept-1.html">arrow</a>
-                </figcaption>
-            </figure>
+                <h3>Open statistieken delen</h3>
+                <p>Camera’s met beeldherkenning maken processen efficiënter, zoals bij een parkeerscanauto of scanfiets. Maar de data over die winst is niet publiek beschikbaar. Wat als radicale openheid juist nieuwe inzichten en debat zou stimuleren?</p>
+                <a href="./pages/concept-1.html">arrow</a>   
+            </section>
             <!--Chatten met de handhaver-->
-            <figure>
+            <section>
                 <img src="./assets/placeholder-concept-2.jpg" alt="">
                 <figcaption>
                     <h3>Chatten met de handhaver</h3>
                     <p>Nu de handhaver achter een computer zit in plaats van op straat, is er niemand meer om vragen te stellen. Terwijl hij wacht op nieuwe foto’s, zou hij misschien ook burgers kunnen helpen. Zou een helpdesk hier uitkomst bieden?</p>
                     <a href="./pages/concept-2.html">arrow</a>
                 </figcaption>
-            </figure>
+            </section>
             <!--Seintje bij het fotograferen-->
-            <figure>
+            <section>
                 <img src="./assets/placeholder-concept-3.jpg" alt="">
                 <figcaption>
                     <h3>Zichtbaar maken wat je niet ziet</h3>
                     <p>Mensen denken vaak dat camera’s filmen, terwijl er meestal alleen foto’s gemaakt worden. Wat als een duidelijk seintje— een lichtje of diafragma—precies laat zien wanneer dat gebeurt?</p>
                     <a href="./pages/concept-3.html">arrow</a>
                 </figcaption>
-            </figure>
+            </section>
             <!--Cameradoos met vorm en richting-->
-            <figure>
+            <section>
                 <img src="./assets/placeholder-concept-4.jpg" alt="">
                 <figcaption>
                     <h3>Het oog van de scanauto</h3>
                     <p>Op straat zie je camera’s duidelijk, maar op een scanauto zijn ze verborgen in een zwarte doos. Dat maakt het een mysterieus ‘alziend oog’. Zou een andere vorm de werking transparanter kunnen maken?</p>
                     <a href="./pages/concept-4.html">arrow</a>
                 </figcaption>
-            </figure>
+            </section>
             <!--Maquette voor de digitale openbare ruimte-->
-            <figure>
+            <section>
                 <img src="./assets/placeholder-concept-5.jpg" alt="">
                 <figcaption>
                     <h3>Een digitale maquette voor de stad</h3>
                     <p>Voor fysieke plannen bestaan er maquettes en modellen die de impact zichtbaar maken. Maar hoe betrek je bewoners bij digitale veranderingen? Zou een digitale maquette de onzichtbare technologie tastbaar kunnen maken?</p>
                     <a href="./pages/concept-5.html">arrow</a>
                 </figcaption>
-            </figure>
+            </section>
             <!--Ga de straat op!-->
-            <figure>
+            <section>
                 <img src="./assets/placeholder-concept-6.jpeg" alt="">
                 <figcaption>
                     <h3>Ga de straat op!</h3>
                     <p>Technologieprojecten worden vaak pas gedeeld als ze af zijn. Maar wat gebeurt er als je al vroeg een mock-up de straat op stuurt? Feedback kan vormgeving verbeteren en nieuwe perspectieven openen.</p>
                     <a href="./pages/concept-6.html">arrow</a>
                 </figcaption>
-            </figure>
+            </section>
             <!--Waardenkaartjes-->
-            <figure>
+            <section>
                 <img src="./assets/placeholder-concept-7.png" alt="">
                 <figcaption>
                     <h3>Waarden op tafel</h3>
                     <p>Participatie vraagt om duidelijke kaders. Wat als bewoners de afgesproken publieke waarden letterlijk in handen hebben—via waardenkaartjes—om technologievoorstellen langs te leggen?</p>
                     <a href="./pages/concept-7.html">arrow</a>
                 </figcaption>
-            </figure>
+            </section>
             <!--Menselijke maat bepalen-->
-            <figure>
+            <section>
                 <img src="./assets/placeholder-concept-8.jpg" alt="">
                 <figcaption>
                     <h3>De menselijke maat in het algoritme</h3>
                     <p>Een scanauto verwerkt uitzonderingen die vaak voorkomen, maar mist soms rechtvaardigheid in zeldzame gevallen. Wat als burgers via een quiz of feedbackloop meewegen of een boete écht eerlijk is?</p>
                     <a href="./pages/concept-8.html">arrow</a>
                 </figcaption>
-            </figure>
+            </section>
             <!--concept 9-->
-            <figure>
+            <section>
                 <img src="./assets/placeholder-concept-9.png" alt="">
                 <figcaption>
                     <h3>Placeholder tekst komt nog</h3>
                     <p>Placeholder tekst komt nog</p>
                     <a href="./pages/concept-9.html">arrow</a>
                 </figcaption>
-            </figure>
+            </section>
             <!--concept 10-->
-            <figure>
+            <section>
                 <img src="./assets/placeholder-concept-10.png" alt="">
                 <figcaption>
                     <h3>Placeholder tekst komt nog</h3>
                     <p>Placeholder tekst komt nog</p>
                     <a href="./pages/concept-10.html">arrow</a>
                 </figcaption>
-            </figure>
+            </section>
         </section>
     </main>
     <footer>
-        <section class="links">
-            <a href="https://civicinteractiondesign.com/projects/"><p>Research projects</p></a>
-            <a href="https://civicinteractiondesign.com/"><p>civic interaction design</p></a>
-            <a href="https://humanvaluesforsmartercities.nl/"><p>Human Values For Smarter Cities</p></a>
-            <a href="https://civicinteractiondesign.com/people/"><p>Contact</p></a>
-        </section>
+        <nav class="links">
+            <ul>
+                <li><a href="https://civicinteractiondesign.com/projects/">Research projects</a></li>
+                <li><a href="https://civicinteractiondesign.com/">civic interaction design</a></li>
+                <li><a href="https://humanvaluesforsmartercities.nl/">Human Values For Smarter Cities</a></li>
+                <li><a href="https://civicinteractiondesign.com/people/">Contact</a></li>
+            </ul>
+        </nav>
         <section class="subscribe">
             <form>
                 <label for="subscribe">Subscribe to our newsletter</label>
@@ -150,13 +184,6 @@
             </form>
         </section>
     </footer>
-
-    <section class="cursor">
-        <div class="corner top-left"></div>
-        <div class="corner top-right"></div>
-        <div class="corner bottom-left"></div>
-        <div class="corner bottom-right"></div>
-    </section>
 
     <script src="scripts/script.js"></script>
 
