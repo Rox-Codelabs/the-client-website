@@ -39,3 +39,23 @@ checkboxes.forEach(cb => cb.addEventListener('change', filterArticles));
 //The change event triggers filterArticles().
 //filterArticles() looks at all checked boxes.
 //It loops through every article and shows only the ones that match.
+
+
+
+
+
+
+
+
+
+
+//burger menu
+function showBurgermenu(){
+    const burgermenu = document.querySelector('.burgermenu')
+    burgermenu.style.display = 'flex'
+}
+
+function hideBurgermenu(){
+    const burgermenu = document.querySelector('.burgermenu')
+    burgermenu.style.display = 'none'
+}
