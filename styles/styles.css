@@ -31,15 +31,17 @@ footer img {
     --fontsize-h3: 1.75rem;
     --linehight: 0.09rem;
 
-    /*Cards*/
+    /*Radius*/
     --radius-card: 2rem;
     --radius-tg: 0.03rem;
     --radius-tg: 0.063rem;
 
+    /*Shadows*/
     --shadow-card: 0px 20px 26px rgba(54, 53, 53, 0.16);
     --shadow-buttom: 0px 5px 10px rgba(54, 53, 53, 0.16);
     --shadow-inner: 30px 30px 30px rgba(54. 53, 53, 0.75) ;
     
+    /*Borders*/
     --border-tg: solid --color-black 0.3rem;
     --border-label: solid --color-black 0.4rem;
     --border-button: solid --color-black 0.6rem;
