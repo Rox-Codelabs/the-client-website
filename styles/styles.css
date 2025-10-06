@@ -23,7 +23,12 @@ footer img {
 h1 {
     font-family: "RoxFont";
     font-style: normal;
+}
+
+p{
+    font-size: 16px;
     line-height: 1.4px;
+    color: var(--black);
 }
 
 
