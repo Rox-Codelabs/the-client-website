@@ -4,19 +4,19 @@ const articles = document.querySelectorAll('article'); // finds all article elem
 
 // create the filter function
 function filterArticles(){
-const checkedValues = Array.from(checkboxes) //turns the list of checkboxes into real array so we can use array methode
-.filter(cb => cb.checked) // keeps only the checkboxes that are checked
-.map(cb => cb.value); // turns checkboxes into their values 
+    const checkedValues = Array.from(checkboxes) //turns the list of checkboxes into real array so we can use array methode
+    .filter(cb => cb.checked) // keeps only the checkboxes that are checked
+    .map(cb => cb.value); // turns checkboxes into their values 
 
-//show/hide articles
-articles.forEach(article => {
-    const categories = article.dataset.category.split(' ');
-    if (checkedValues.length === 0 || categories.some(cat => checkedValues.includes(cat))){
-        article.style.display = '';
-    } else {
-        article.style.display = 'none';
-    }
-});
+    //show/hide articles
+    articles.forEach(article => {
+        const categories = article.dataset.category.split(' ');
+        if (checkedValues.length === 0 || categories.some(cat => checkedValues.includes(cat))){
+            article.style.display = '';
+        } else {
+            article.style.display = 'none';
+        }
+    });
 }
 //articles.forEach(article => { ... }) loops over every article on the page.
 //article.dataset.category gets the data-category value of the article.
