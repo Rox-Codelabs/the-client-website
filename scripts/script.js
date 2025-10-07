@@ -50,12 +50,15 @@ checkboxes.forEach(cb => cb.addEventListener('change', filterArticles));
 
 
 //burger menu
-function showBurgermenu(){
-    const burgermenu = document.querySelector('.burgermenu')
-    burgermenu.style.display = 'flex'
-}
+function showMenuMobile() {
+    
+  const menuItems = document.querySelectorAll('.menu-mobile ul li:nth-last-child(-n+3)');
 
-function hideBurgermenu(){
-    const burgermenu = document.querySelector('.burgermenu')
-    burgermenu.style.display = 'none'
+  menuItems.forEach(item => {
+    if (item.style.display === 'block') {
+      item.style.display = 'none';
+    } else {
+      item.style.display = 'block';
+    }
+  });
 }

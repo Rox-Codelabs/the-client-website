@@ -5,6 +5,7 @@ article img {
 footer img {
     width: 300px;
 }
+
 /*==========================================================Overall==========================================================================*/
 * {
     margin: 0;
@@ -42,11 +43,14 @@ footer img {
     --shadow-inner: 30px 30px 30px rgba(54. 53, 53, 0.75) ;
     
     /*Borders*/
-    --border-tg: solid --color-black 0.3rem;
-    --border-label: solid --color-black 0.4rem;
-    --border-button: solid --color-black 0.6rem;
+    --border-tg: solid var(--color-black) 0.3rem;
+    --border-label: solid var(--color-black) 0.4rem;
+    --border-button: solid var(--color-black) 0.6rem;
 
-    /*Color dark theme (maakt dit echt zo veel verschil / even onderaan vanwegen kleurtje)*/
+    /*Proberen*/
+    --logo-height: 3rem;
+
+    /*Color dark theme (maakt dit echt zo veel verschil / vorige keer niet zichtbaar in darktheme maar lost dit het op / even onderaan vanwegen kleurtje)*/
     @media (prefers-color-scheme: dark){
         --color-darkblue: #1E4D68;
         --color-lightblue: #A0D8CD;
@@ -57,6 +61,62 @@ footer img {
 }
 /*==========================================================Cursor=========================================================================*/
 /*==========================================================Header=========================================================================*/
+header{
+    display: flex;
+    justify-content: center;
+    top: 1rem;
+
+    position: relative;
+
+    img{
+        height: var(--logo-height);
+    }
+    .menu-mobile{
+       ul{
+        background-color: var(--color-white);
+        width: 20vw;
+        list-style: none;
+            li{ 
+                &:first-child{
+                    background-color: yellow;
+                    position: absolute;
+                    z-index: 5;
+                    top: -0.5rem;
+                    left: 0.5rem;
+                }
+                &:nth-last-child(-n+3) {
+                    background-color: #1E4D68;
+                    position: absolute;
+                    rotate: -90deg;
+                    display: none;
+                    left: 0;
+                }
+
+                a{
+                text-decoration: none;  
+                color: var(--color-black);
+                
+                }
+            }
+        } 
+        @media (min-width: 600px) {
+            display: none;
+        }
+    }
+     
+    &::before, /*😎 & nesting https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector*/
+    &::after{
+        content: "";
+        flex: 1; /*https://developer.mozilla.org/en-US/docs/Web/CSS/flex*/
+        height: 0.09rem;
+        background-color: var(--color-black);
+        margin-top: calc(var(--logo-height)/2);
+    }
+
+    
+}
+
+
 /*==========================================================Hero===========================================================================*/
 /*==========================================================Filter=========================================================================*/
 /*==========================================================Main===========================================================================*/
