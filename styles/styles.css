@@ -55,16 +55,12 @@ footer img {
         
     }
 
-
-    
-    
-    
-    
-   
     /*Radius*/
     --radius-card: 2rem;
-    --radius-tg: 0.03rem;
-    --radius-tg: 0.063rem;
+    --radius-tg: 0.63rem;
+    --radius-lb: 0.63rem;
+    --radius-cardimg: 35px 35px 0px 0px;
+    --radius-cardtext: 0px 0px 35px 35px;
 
     /*Shadows*/
     --shadow-card: 0px 20px 26px rgba(54, 53, 53, 0.16);
@@ -77,6 +73,7 @@ footer img {
     --border-label: solid var(--color-black) 0.4rem;
     --border-button: solid var(--color-black) 0.6rem;
 
+    
     /*Proberen*/
     --logo-height: 3rem;
 
@@ -164,7 +161,7 @@ header{
 }
 /*==========================================================Filter=========================================================================*/
 .filter-section{ /* misschien weg halen maar voor mezelf nu even form laten staan*/
-    width: 90vw;
+    width: 87vw;
     box-shadow: var(--shadow-filter);
     margin: auto;
     padding: 1rem;
@@ -227,7 +224,7 @@ header{
         }
         label{
             border: 0.1rem solid black;
-            border-radius: 8px;
+            border-radius: var(--radius-tg);
             padding: 0.1rem 0.5rem 0.1rem 0.5rem;
             display: flex;
 
@@ -253,23 +250,68 @@ header{
         
     }
 }
-
 /*==========================================================Main===========================================================================*/
-main{
-    .concept-section{
-        article{
-            img{}
-            ul{li{}}
+
+.concept-section{
+    article{
+        border: 35px;
+        position: relative;
+
+        img{
+            border-radius: var(--radius-cardimg);
+            display: block;
+        }
+
+        ul{
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 10;
+            list-style: none;
+            display: flex;
+            flex: wrap;
+            gap: 0.5rem;
+
+            li{
+                color: var(--color-white);
+                background-color: var(--color-transparant);
+                border: solid black 0.1rem;
+                border-radius: var(--radius-lb);
+                backdrop-filter: blur(0.2rem);
+
+                display: flex;
+                padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+
+                &.evaluating::before{content:"🔍";}
+                &.transparency::before{content:"👁️";}
+                &.concept::before{content:"💡";}
+                &.deployment::before{content:"🚀";}
+                &.actionable::before{content:"✋";}
+                &.legible::before{content:"📄";}
+                &.exeriment::before{content:"🧪";}
+                &.articulating::before{content:"💬";}
+                &.relatable::before{content:"❤️";}
+                &.methode::before{content:"📐";}
+                &.making::before{content:"🛠️";}
+                &.contestable::before{content:"⚖️";}
+            }
+        }
+
+        .article-text{
+            background-color: #0D3951;
+            border-radius: var(--radius-cardtext);
             h3{}
             p{}
             a:first-of-type{}
-            a:last-of-type{}
+            a:last-of-type{} 
         }
-        hr:first-of-type{}
-        button{}
-        hr:last-of-type{}
+        
     }
+    hr:first-of-type{}
+    button{}
+    hr:last-of-type{}
 }
+
 /*==========================================================Footer=========================================================================*/
 footer{}
 /*==========================================================Comunity section===============================================================*/
