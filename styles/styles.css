@@ -66,14 +66,12 @@ header{
     display: flex;
     justify-content: center;
     top: 1rem;
-
     position: relative;
 
     img{
         height: var(--logo-height);
     }
-    .menu-mobile{
-
+    nav{
        ul{
         background-color: var(--color-white);
         width: 20vw;
@@ -101,9 +99,6 @@ header{
                 }
             }
         } 
-        @media (min-width: 600px) {
-            display: none;
-        }
     }
      
     &::before, /*😎 & nesting https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector*/
@@ -115,7 +110,9 @@ header{
         margin-top: calc(var(--logo-height)/2);
     }
 
-    
+    @media (min-width:600px) {
+      /*nieuwe styling voor header*/  
+    }
 }
 /*==========================================================Hero===========================================================================*/
 .hero-section{
