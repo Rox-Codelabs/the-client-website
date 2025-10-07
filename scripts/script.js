@@ -51,9 +51,15 @@ checkboxes.forEach(cb => cb.addEventListener('change', filterArticles));
 
 //burger menu
 
-const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('nav');
+function showMenuMobile() {
+    
+  const menuItems = document.querySelectorAll('.menu-mobile ul li:nth-last-child(-n+3)');
 
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
+  menuItems.forEach(item => {
+    if (item.style.display === 'block') {
+      item.style.display = 'none';
+    } else {
+      item.style.display = 'block';
+    }
   });
+}
