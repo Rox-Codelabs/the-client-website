@@ -227,8 +227,21 @@ header{
                 content:"";
                 opacity: 0;
             }
+            
+            &[for="concept"]::before{content: "💡";}
+            &[for="experiment"]::before{content: "🧪";}
+            &[for="methode"]::before{content: "📐";}
+            &[for="transparency"]::before{content: "👁️";}
+            &[for="actionable"]::before{content: "✋";}
+            &[for="legible"]::before{content: "📄";}
+            &[for="relatable"]::before{content: "❤️";}
+            &[for="contestable"]::before{content: "⚖️";}
+            &[for="evaluating"]::before{content: "🔍";}
+            &[for="deployment"]::before{content: "🚀";}
+            &[for="articulating"]::before{content: "💬";}
+            &[for="making"]::before{content: "🛠️";}
         }
-
+        
     }
 }
 
