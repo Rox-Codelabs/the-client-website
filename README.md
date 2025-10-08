@@ -42,6 +42,8 @@ toekomstige uitbreidingen:
 - hovers en animaties
 - filter inklapbaar op mobiel
 - burger menu op mobiel
+<img width="1200" height="2526" alt="≥ 1200px – 14" src="https://github.com/user-attachments/assets/9cc1a1dd-325c-42b1-8873-ceba8707c22b" />
+<img width="320" height="2717" alt="≥ 1200px – 12" src="https://github.com/user-attachments/assets/486a7066-df65-45fe-9569-b360312e650b" />
 
 ## Licentie
 
