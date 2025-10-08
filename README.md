@@ -7,7 +7,6 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
-Beschrijving:
 De opdracht is om een interactieve bibliotheek/toolkit/overzichtspagina te maken, waarin ideeën en experimenten uit het Human Values for Better Cities-project toegankelijk worden gemaakt voor mensen die te maken krijgen met beeldherkenningstechnologie.
 <img width="400" height="1207" alt="image" src="https://github.com/user-attachments/assets/8764f9d0-7411-4c89-9260-8e08437efeeb" />
 
@@ -29,7 +28,7 @@ De website is opgemaakt uit semantische HTML en CSS, en bevat tijdelijk wat gele
 
 Er wordt gebruikgemaakt van CSS nesting en css variabelen. De website wordt mobile first opgebouwd.
 
-toekomstige uitbreidingen:
+Toekomstige uitbreidingen:
 - responsive design
 - detailpagina
 - hovers en animaties
