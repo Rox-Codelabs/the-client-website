@@ -1,11 +1,4 @@
 # The Client - Website
-
-Ontwerp en maak een website voor een opdrachtgever en bespreek het resultaat tijdens de Sprint Review.
-
-De instructie van deze leertaak staan in de [INSTRUCTIONS](https://github.com/fdnd-task/the-client-website/blob/main/docs/INSTRUCTIONS.md)
-
-
-
 ## Inhoudsopgave Readme
 
   * [Beschrijving](#beschrijving)
