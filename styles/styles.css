@@ -214,6 +214,7 @@ header{
     }
 
     fieldset{
+        text-align: left;
         all: unset;
         display: flex;
         flex-wrap: wrap;
