@@ -14,6 +14,8 @@ De opdracht is om een interactieve bibliotheek/toolkit/overzichtspagina te maken
 <!-- Voeg een link toe naar Github Pages 🌐-->
 https://rox-codelabs.github.io/the-client-website/ 
 
+<img width="200" height="200" alt="designing for recognition" src="https://github.com/user-attachments/assets/701ef8ef-f866-4cc0-9253-3916d6edec54" />
+
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 De titel van het project/website is Designing for Recognition. Daarbij heb ik een logo gemaakt: op mobiel staat deze in het midden en op desktop zal deze aan de linkerkant komen te staan.
