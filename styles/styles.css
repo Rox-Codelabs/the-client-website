@@ -36,7 +36,9 @@ html, body {
     --fontfamily-h1:'Vremenagrotesk', Tahoma, Geneva, Verdana, sans-serif;
     --fontfamily-h2:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fontfamily-h3:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fontfamily-h4:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fontfamily-p:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     
     /*font weight*/
     --fontweight-legend: 600;
@@ -44,6 +46,7 @@ html, body {
     --fontweight-h1:600;
     --fontweight-h2:600;
     --fontweight-h3:600;
+    --fontweight-h4:200;
 
     /*font style*/
     --fontstyle-legend: italic;
@@ -59,6 +62,7 @@ html, body {
     --fontsize-h1: 2rem;
     --fontsize-h2: 1rem;
     --fontsize-h3: 1.2rem;
+    --fontsize-h4: 1.3rem;
 
     @media (min-width: 320) {
         
@@ -274,14 +278,17 @@ header{
 .concept-section{
     display: grid;
     margin-top: 2rem;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding: 0 1rem;
+
+    @media (min-width:400px) {
+        
+    }
+
     article{
         border: 35px;
         position: relative;
         width: 100%;
-        max-width: 300px;
-        margin: auto;
-
         img{
             border-radius: var(--radius-cardimg);
             width: 100%;
@@ -294,7 +301,7 @@ header{
             z-index: 10;
             list-style: none;
             display: flex;
-            flex: wrap;
+            flex-wrap: wrap;
             gap: 0.5rem;
             opacity: 0;
 
@@ -363,44 +370,57 @@ header{
         }
         
     }
-    hr:first-of-type{}
-    button{}
-    hr:last-of-type{}
+    button{
+        border-radius: var(--radius-button);
+        font-size: var(--fontsize-button);
+        font-weight: var(--fontweight-filterb);
+        box-shadow: var(--shadow-buttom);
+        background: none;
+        border: none;
+        width: 12rem;
+        margin: auto;
+    }
 }
 
 /*==========================================================Footer=========================================================================*/
 footer{
     margin-top: 2rem;
-}
-/*==========================================================Comunity section===============================================================*/
-.community-section{
-    h4{}
-    hr{}
-    form{
-        label{}
-        input:first-of-type{}
-        input:last-of-type{}
+    display: grid;
+    gap: 2rem;
+   
+    hr{
+        width: 100%;
+        max-width: 80vw; 
+        margin: auto;
+        background-color: var(--color-black);
+        
+    } 
+
+    h4{
+        font-family: var(--fontfamily-h4);
     }
-}
-/*==========================================================Link section===================================================================*/
-.link-section{
-    h4{}
-    hr{}
-    nav{
+
+    .community-section{
+        form{
+            label{}
+            input:first-of-type{}
+            input:last-of-type{}
+        }
+    }
+    .link-section{
+        nav{
         ul{li{a{}}}
+        }
     }
-}
-/*==========================================================Contact section================================================================*/
-.contact-section{
-    h4{}
-    address{
+
+    .contact-section{
+        address{
         a{}
+        }
     }
-}
-/*==========================================================Lower footer Partners==========================================================*/
-.lower-footer{
-    h4{}
-    ul{
+
+    .lower-footer{
+        ul{}
         li{
             a{
                 img{}
@@ -408,3 +428,11 @@ footer{
         }
     }
 }
+
+/*==========================================================Comunity section===============================================================*/
+
+/*==========================================================Link section===================================================================*/
+
+/*==========================================================Contact section================================================================*/
+
+/*==========================================================Lower footer Partners==========================================================*/
