@@ -13,7 +13,8 @@ De opdracht is om een interactieve bibliotheek/toolkit/overzichtspagina te maken
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 https://rox-codelabs.github.io/the-client-website/ 
-<img width="300" height="300" alt="OuO-4V_qrcode" src="https://github.com/user-attachments/assets/8369b585-1f46-4508-950a-ae721c47f91a" />
+
+<img width="200" height="200" alt="designing for recognition" src="https://github.com/user-attachments/assets/701ef8ef-f866-4cc0-9253-3916d6edec54" />
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
