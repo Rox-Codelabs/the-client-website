@@ -1,7 +1,4 @@
 /*==========================================================tijdelijk========================================================================*/
-article img {
-    width: 300px;
-}
 footer img {
     width: 300px;
 }
@@ -23,15 +20,25 @@ footer img {
     --color-transparant-checked:#ebdac4cb;
 
 /*==========================================================Typography=======================================================================*/
+    @font-face {
+        font-family: 'Vremenagrotesk';
+        src: url(fonts\vremenagrotesk-webfont.woff2) format('woff2');
+    }
+
     
     /*font family*/
     --fontfamily-legend:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fontfamily-h1:'Vremenagrotesk', Tahoma, Geneva, Verdana, sans-serif;
     --fontfamily-h2:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fontfamily-h3:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fontfamily-p:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     /*font weight*/
     --fontweight-legend: 600;
     --fontweight-filterb: 400;
+    --fontweight-h1:600;
     --fontweight-h2:600;
+    --fontweight-h3:600;
 
     /*font style*/
     --fontstyle-legend: italic;
@@ -39,13 +46,14 @@ footer img {
 
     /*font size*/
     --fontsize-tags: 1rem;
-    --fontsize-button: 1.125rem;
-    --fontsize-paragraph: 1.375rem;
+    --fontsize-button: 1rem;
+    --fontsize-paragraph: 1rem;
     --fontsize-labels: 1.375rem;
     --fontsize-filterb: 1rem;
     --fontsize-legend: 1.2rem;
+    --fontsize-h1: 2rem;
     --fontsize-h2: 1rem;
-    --fontsize-h3: 1.75rem;
+    --fontsize-h3: 1.2rem;
 
     @media (min-width: 320) {
         
@@ -61,6 +69,7 @@ footer img {
     --radius-lb: 0.63rem;
     --radius-cardimg: 35px 35px 0px 0px;
     --radius-cardtext: 0px 0px 35px 35px;
+    --radius-button: 0.5rem;
 
     /*Shadows*/
     --shadow-card: 0px 20px 26px rgba(54, 53, 53, 0.16);
@@ -76,6 +85,7 @@ footer img {
     
     /*Proberen*/
     --logo-height: 3rem;
+    --padding: 0.1rem 0.5rem 0.1rem 0.5rem;
 
     /*Color dark theme (maakt dit echt zo veel verschil / vorige keer niet zichtbaar in darktheme maar lost dit het op / even onderaan vanwegen kleurtje)*/
     @media (prefers-color-scheme: dark){
@@ -150,8 +160,13 @@ header{
     margin: 3rem;
     h1{
         margin-bottom: 1rem;
+        font-size: var(--fontsize-h1);
+        font-family: var(--fontfamily-h1);
+        font-weight: var(--fontweight-h1);
     }
     p{
+        font-size: var(--fontsize-paragraph);
+        font-family: var(--fontfamily-p);
         @media (min-width:600px) {
             max-width: 450px;
             margin: auto;
@@ -160,7 +175,7 @@ header{
     
 }
 /*==========================================================Filter=========================================================================*/
-.filter-section{ /* misschien weg halen maar voor mezelf nu even form laten staan*/
+.filter-section{ 
     width: 87vw;
     box-shadow: var(--shadow-filter);
     margin: auto;
@@ -171,11 +186,11 @@ header{
     h2{
         font-size: var(--fontsize-h2);
         font-weight: var(--fontweight-h2);
-        font-style: var(--fontstyle-h2);                                                                                          /* variabele van maken*/
+        font-style: var(--fontstyle-h2);
         border: solid black 0.1rem;
         border-radius: 10px;
         width: fit-content;
-        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        padding: var(--padding);
     }
 
     button{
@@ -225,7 +240,7 @@ header{
         label{
             border: 0.1rem solid black;
             border-radius: var(--radius-tg);
-            padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+            padding: var(--padding);
             display: flex;
 
             &::after{
@@ -253,13 +268,17 @@ header{
 /*==========================================================Main===========================================================================*/
 
 .concept-section{
+    margin-top: 2rem;
     article{
         border: 35px;
         position: relative;
-
+        width: 300px;
+        aspect-ratio: 3 / 4;
+        margin: auto;
+        
         img{
             border-radius: var(--radius-cardimg);
-            display: block;
+            width: 100%;
         }
 
         ul{
@@ -271,6 +290,9 @@ header{
             display: flex;
             flex: wrap;
             gap: 0.5rem;
+            opacity: 0;
+
+            
 
             li{
                 color: var(--color-white);
@@ -280,7 +302,7 @@ header{
                 backdrop-filter: blur(0.2rem);
 
                 display: flex;
-                padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+                padding: var(--padding);
 
                 &.evaluating::before{content:"🔍";}
                 &.transparency::before{content:"👁️";}
@@ -295,15 +317,43 @@ header{
                 &.making::before{content:"🛠️";}
                 &.contestable::before{content:"⚖️";}
             }
+            
+            @media (min-width:600px) {
+                opacity:1;
+            }
         }
 
         .article-text{
-            background-color: #0D3951;
             border-radius: var(--radius-cardtext);
-            h3{}
-            p{}
-            a:first-of-type{}
-            a:last-of-type{} 
+            box-shadow: var(--shadow-card);
+            padding: 1rem;
+            h3{
+                font-family: var(--fontfamily-h3);
+                font-size: var(--fontsize-h3);
+            }
+            p{
+                font-family: var(--fontfamily-p);
+                font-size: var(--fontsize-paragraph);
+                margin-top: 0.7rem;
+                margin-bottom: 1rem;
+            }
+            a{
+                padding: var(--padding);
+                border-radius: var(--radius-button);
+                box-shadow: var(--shadow-buttom);
+                text-decoration: none;
+                font-family: var(--fontfamily-p);
+                font-size: var(--fontsize-button);
+            }
+            
+            a:first-of-type{
+                background-color: var(--color-black);
+                color: var(--color-white);
+            }
+            a:last-of-type{
+                background-color: var(--color-white);
+                color: var(--color-black);
+            } 
         }
         
     }
