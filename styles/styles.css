@@ -9,6 +9,11 @@ footer img {
     padding: 0;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 :root {
     /*Color light theme*/
     --color-darkblue: #0D3951;
@@ -115,14 +120,12 @@ header{
         list-style: none;
             li{ 
                 &:first-child{
-                    background-color: yellow;
                     position: absolute;
                     z-index: 5;
                     top: -0.5rem;
                     left: 0.5rem;
                 }
                 &:nth-last-child(-n+3) {
-                    background-color: #1E4D68;
                     position: absolute;
                     rotate: -90deg;
                     display: none;
@@ -176,7 +179,8 @@ header{
 }
 /*==========================================================Filter=========================================================================*/
 .filter-section{ 
-    width: 87vw;
+    width: 100%;
+    max-width: 87vw;
     box-shadow: var(--shadow-filter);
     margin: auto;
     padding: 1rem;
@@ -272,10 +276,11 @@ header{
     article{
         border: 35px;
         position: relative;
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
         aspect-ratio: 3 / 4;
         margin: auto;
-        
+
         img{
             border-radius: var(--radius-cardimg);
             width: 100%;
