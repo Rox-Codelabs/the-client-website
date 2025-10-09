@@ -1,11 +1,4 @@
 # The Client - Website
-## Inhoudsopgave Readme
-
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
-
 ## Beschrijving
 De opdracht is om een interactieve bibliotheek/toolkit/overzichtspagina te maken, waarin ideeën en experimenten uit het Human Values for Better Cities-project toegankelijk worden gemaakt voor mensen die te maken krijgen met beeldherkenningstechnologie.
 <img width="400" height="1207" alt="image" src="https://github.com/user-attachments/assets/8764f9d0-7411-4c89-9260-8e08437efeeb" />
