@@ -278,21 +278,32 @@ header{
 
 .concept-section{
     display: grid;
-    margin-top: 2rem;
     gap: 1.5rem;
     padding: 0 1rem;
+    width: 100%;
+    max-width: 87vw;
+    margin: 2rem auto;
 
-    @media (min-width:400px) {
-        
+    @media (min-width:600px) {
+        grid-template-columns: 1fr 1fr;
     }
-
+    @media (min-width:800px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (min-width:1500px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
     article{
-        border: 35px;
+        align-items: stretch;
+        min-height: 300px;
         position: relative;
-        width: 100%;
+        
         img{
             border-radius: var(--radius-cardimg);
             width: 100%;
+            object-fit: cover;
+            aspect-ratio: 3 / 2;
         }
 
         ul{
@@ -341,6 +352,7 @@ header{
             border-radius: var(--radius-cardtext);
             box-shadow: var(--shadow-card);
             padding: 1rem;
+            aspect-ratio: 3 / 1;
             h3{
                 font-family: var(--fontfamily-h3);
                 font-size: var(--fontsize-h3);
