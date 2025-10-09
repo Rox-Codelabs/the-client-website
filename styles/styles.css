@@ -298,7 +298,7 @@ header{
         align-items: stretch;
         min-height: 300px;
         position: relative;
-        
+
         img{
             border-radius: var(--radius-cardimg);
             width: 100%;
